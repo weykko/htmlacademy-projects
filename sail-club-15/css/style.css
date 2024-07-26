@@ -1,0 +1,608 @@
+/* Основа */
+
+body {
+    background-color: #FDFDFF;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #163152;
+    margin: 0;
+}
+
+h1 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 60px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+a {
+    text-decoration: none;
+    color: #163152;
+}
+
+
+a:hover:not(.header-logo a, .footer-logo a) {
+    opacity: 0.5;
+}
+
+a:active:not(.header-logo a, .footer-logo a) {
+    opacity: 0.3;
+}
+
+
+/* Шапка */
+
+.page-header {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 20px 55px;
+    margin-bottom: 40px;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 64px;
+    height: 68px;
+    margin: 0 auto 0 0;
+}
+
+.header-navigation-list {
+    width: 559px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-right: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.header-navigation-item a {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 198, 189, 1);
+}
+
+
+
+/* Мэин */
+
+.page-main {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 55px;
+}
+
+
+
+/* Hero */
+
+.hero-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    text-transform: uppercase;
+}
+
+.hero {
+    margin-bottom: 120px;
+}
+
+
+
+/* Активности */
+
+.first-activitie, .second-activitie {
+    width: 1030px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-activitie {
+    flex-direction: row-reverse;
+    margin-bottom: 120px;
+}
+
+.activitie-column {
+    width: 400px;
+}
+
+.second-activitie .activitie-column {
+    width: 400px;
+    text-align: right;
+}
+
+.activitie-title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.first-activitie .activitie-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 268px; 
+    height: 2px;
+    background-color: rgba(0, 198, 189, 1);
+}
+
+.second-activitie .activitie-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    width: 217px; 
+    height: 2px;
+    background-color: rgba(0, 198, 189, 1);
+}
+
+.activitie-dates {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+
+/* Аренда яхт */
+
+.yacht-rental {
+    width: 1170px;
+    margin-bottom: 120px;
+}
+
+.yacht-rental-title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 55px;
+}
+
+.yacht-rental-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0; 
+    width: 148px; 
+    height: 2px;
+    background-color: rgba(0, 198, 189, 1);
+}
+
+.yachts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 30px;
+}
+
+.yacht {
+    width: 310px;
+    padding: 30px;
+    background-color: rgba(253, 253, 255, 1);
+    box-shadow: 0px 4px 30px rgba(22, 49, 82, 0.12);
+}
+
+.yacht-img{
+    display: block;
+    margin-bottom: 21px;
+}
+
+.yacht-name {
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0;
+    margin-bottom: 18px;
+}
+
+.yacht-description {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.yacht-features {
+    margin: 0;
+    margin-bottom: 29px;
+    padding-left: 18px;
+    list-style: none;
+    list-style-type: disc; 
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.yacht-features li {
+    margin-bottom: 4px;
+}
+
+
+.yacht-price {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0;
+}
+
+/* Галлерея */
+
+.gallery {
+    width: 1170px;
+    margin-bottom: 120px;
+}
+
+.gallery-title {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 55px;
+}
+
+.gallery-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 91px; 
+    height: 2px;
+    background-color: rgba(0, 198, 189, 1);
+}
+
+.gallery-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-preview{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.preview-item {
+    margin-bottom: 30px;
+}
+  
+.preview-item:last-child {
+    margin-bottom: 0;
+}  
+
+.preview-item img {
+    display: block;
+}
+
+.gallery-preview a {
+    position: relative;
+    display: block;
+}
+  
+.gallery-preview a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.gallery-preview a.current::before {
+    background-color: transparent;
+}
+
+/* Новости */
+
+.news {
+    width: 770px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.news-title {
+    position: relative;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 55px;
+}
+
+.news-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 97px; 
+    height: 2px;
+    background-color: rgba(0, 198, 189, 1);
+}
+
+.news-photo {
+    margin: 0;
+    margin-bottom: 17px;
+}
+
+.news-photo img {
+    display: block;
+    margin: 0;
+    margin-bottom: 17px;
+}
+
+.photo-description {
+    margin: 0;
+    margin-bottom: 33px;
+    line-height: 19px;
+    color: #8693A4;
+}
+
+.news h3 {
+    margin-top: 33px;
+    margin-bottom: 27px;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.news h4 {
+    margin-top: 24px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.news p, .team-name {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.news p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.news ul {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding-left: 19px;
+}
+
+.news li {
+    margin-bottom: 8px;
+}
+
+.list-title {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+blockquote {
+    margin-left: 0;
+    padding-left: 20px;
+    margin-top: 38px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    border-left: 2px solid rgba(0, 198, 189, 1);
+}
+
+.news-footer {
+    width: 770px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.author-photo {
+    margin-right: 15px;
+}
+
+.news-meta {
+    height: 47px;
+}
+
+.news-meta .name-author {
+    font-weight: 700;
+    line-height: 19px;
+    margin: 0;
+    margin-bottom: 9px;
+}
+
+.news-meta time {
+    margin: 0;
+    font-weight: 400;
+    line-height: 19px;
+    color: #8693A4;
+}
+
+.share-icon {
+    width: 26px;
+    height: 22px;
+    margin-left: auto;
+}
+
+
+
+/* Контакты */
+
+.contacts {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.contacts-column {
+    width: 400px;
+    align-self: center;
+}
+
+.contacts-list {
+    margin: 0;
+    padding: 0;
+    list-style: none    ;
+}
+
+.contacts-title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.contacts-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0; 
+    width: 113px; 
+    height: 2px;
+    background-color: rgba(0, 198, 189, 1);
+}
+
+.contacts-item {
+    display: flex;
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+
+.contacts-item-title {
+    margin: 0;
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.address, .phone, .email {
+    margin: 0;
+}
+
+.contacts-item.socials {
+    display: block;
+    margin-bottom: 0px;
+}
+
+.social-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.socials .contacts-item-title {
+    margin-bottom: 15px;
+}
+
+.social-item a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 198, 189, 1);
+}
+
+
+
+/* Подвал */
+
+.page-footer {
+    padding: 60px;
+    border-top: 1px solid rgba(22, 49, 82, 0.1);
+}
+
+.footer-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 55px;
+}
+
+.footer-logo {
+    margin: 0;
+    width: 100px;
+    height: 106px;
+    margin-bottom: 30px;
+}
+
+.footer-column p {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.footer-column p:last-child {
+    margin: 0;
+}
+
+.footer-column {
+    width: 175px;
+}
+
+.footer-navigation-topics {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 70px;
+}
+
+.footer-navigation-item {
+    width: 165px;
+}
+
+.footer-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* font-size: 14px;
+    line-height: 16px; */
+}
+
+.footer-list-title {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.footer-list li {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 12px;
+}
+
+.footer-list li:last-child {
+    margin-bottom: 0;
+}
